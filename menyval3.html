@@ -1,0 +1,78 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>Sömn</title>
+    <link rel="icon" type="image/png" href="bilder/super-moon.png">
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body>
+
+    <!-- I nav finns alla länkar eller knappar för navigering, tex en menyrad -->
+    <header> 
+        Sömn 
+    </header>
+    <div class="row">
+        <div class="col-sm-3" >
+            <a class= "btn btn-default btn-block btn-lg" href="index.html">Sömn</a>
+        </div>
+        <div class="col-sm-3">
+            <a class= "btn btn-default btn-block btn-lg" href="menyval1.html">Varför?</a>
+        </div>
+        <div class="col-sm-3">
+            <a class= "btn btn-default btn-block btn-lg" href="menyval2.html">Hur?</a>
+        </div>
+        <div class="col-sm-3" >
+        <a class= "btn btn-default btn-block btn-lg" id="chosen" href="menyval3.html">Var?</a>
+        </div>
+    </div>       
+    <main>
+        <div class= "container">
+            <img height="338" width="340.6" id= "sideimage" src="bilder/beds.png">   
+            <p>Även om tekniskt sätt så går det att sova var som helst, så är det icke rekommenderat, då det är varken socialt acceptabelt, praktiskt, eller hälsosamt var som helst.</p>
+
+            <p>Det bästa är att sova horizontalt på en mjuk yta. Sängar är byggda för denna funktion, och är därför de bästa platserna att sova på.</p>
+
+            <ul>En guide:
+                <li> Säng: bra</li>
+                <li> Stol: ok</li>
+                <li> Stol med stöd av bord: bättre än stol, men sämre än säng</li>
+                <li> Bord: nej snälla sov inte på bordet</li>
+                <li> Golv: sov bara på golvet om ditt enda andra val är ett bord</li>
+                <li> Soffa: näst bäst, bara bakom säng</li>
+                <li> Sängmatta: varför plågar du dig själv?</li>
+            </ul>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+</body>
+</html>

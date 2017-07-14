@@ -1,0 +1,72 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>Sömn</title>
+    <link rel="icon" type="image/png" href="bilder/super-moon.png">
+
+    
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body ng-app="app">
+
+    <!-- I nav finns alla länkar eller knappar för navigering, tex en menyrad -->
+    <header> 
+        Sömn 
+    </header>
+    <div class="row">
+        <div class="col-sm-3 " >
+            <a class= "btn btn-default btn-block btn-lg" href="index.html">Sömn</a>
+        </div>
+        <div class="col-sm-3">
+            <a class= "btn btn-default btn-block btn-lg" id="chosen" href="menyval1.html">Varför?</a>
+        </div>
+        <div class="col-sm-3">
+            <a class= "btn btn-default btn-block btn-lg" href="menyval2.html">Hur?</a>
+        </div>
+        <div class="col-sm-3">
+            <a class= "btn btn-default btn-block btn-lg" href="menyval3.html">Var?</a>
+        </div>
+    </div>
+    
+    <main> 
+        <div class= "container">
+            <a href="https://google.se"><img id= "sideimage" src="bilder/fragetecken.png"></a>
+            <p>Ingen vet varför vi måste sova. Vetenskapsmänniskorna har ännu inte bestämt sig anledningen till detta behov, så det är ett mysterium. Vad vi vet dock är att det är dåligt för hälsan att ej sova.</p>
+
+            <ul>Till exempel (ej stöttat av vetenskapliga källor)
+                <li> du kan bli väldigt trött</li>
+                <li> du kan hallucinera</li>
+                <li> du kan svimma</li>
+                <li> du kan dö</li>
+                <li> du kan bli lättretad</li>
+                <li> ingen tycker lättretade personer</li>
+                <li> dina vänner kan lämna dig</li>
+                <li> du kan bli deprimerad eftersom du inte har några vänner</li>
+                <li> sov</li>
+                <li> snälla</li>
+            </ul>
+        </div>
+    </main>
+
+</body>
+</html>
